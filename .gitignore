@@ -1,0 +1,8 @@
+# Linters
+.pre-commit-config.yaml
+cspell.config.yaml
+
+# Vim temp files
+*~
+*.swp
+*.swo
