@@ -1,0 +1,18 @@
+services:
+  writefreely:
+    image: algernon/writefreely
+    ports:
+      - "8080:8080"
+    volumes:
+      - data:/data
+    env_file: .env
+    restart: unless-stopped
+  caddy:
+    image: caddy
+    ports:
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+
+volumes:
+  data:
