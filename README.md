@@ -26,7 +26,7 @@ Once in the root directory of the repo, you'll need to create two files:
 
 The first line of `Caddyfile` needs to be the domain name of your blog.
 This allows Caddy to automatically set up HTTPs.
-See (Caddy's documentation)[https://caddyserver.com/docs/automatic-https]
+See [Caddy's documentation](https://caddyserver.com/docs/automatic-https)
 for more on this.
 The second line tells it to send HTTPs traffic to port 8080 on the
 writefreely container.
@@ -40,8 +40,8 @@ reverse_proxy writefreely:8080
 `.env` contains environment variables and their values to be
 passed into the Writefreely container.
 Some of the accepted environment variables are documented
-(here)[https://git.madhouse-project.org/algernon/writefreely-docker/src/branch/main#environment-variables].
-For the rest, see (this shell script)[https://git.madhouse-project.org/algernon/writefreely-docker/src/branch/main/bin/writefreely-docker.sh]
+[here](https://git.madhouse-project.org/algernon/writefreely-docker/src/branch/main#environment-variables).
+For the rest, see [this shell script](https://git.madhouse-project.org/algernon/writefreely-docker/src/branch/main/bin/writefreely-docker.sh)
 that serves as an entrypoint to the container.
 
 The below keys and values should be enough to get a single-tenancy Writefreely
