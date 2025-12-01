@@ -48,7 +48,6 @@ The below keys and values should be enough to get a single-tenancy Writefreely
 instance up and running
 
 ```env
-WRITEFREELY_SITE_NAME="Example"
 WRITEFREELY_HOST="https://example.com"
 WRITEFREELY_SINGLE_USER=true
 WRITEFREELY_ADMIN_USER="admin"
