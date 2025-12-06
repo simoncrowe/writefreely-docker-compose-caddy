@@ -6,3 +6,9 @@ cspell.config.yaml
 *~
 *.swp
 *.swo
+
+# Environment files
+*.env
+
+# Config files
+Caddyfile

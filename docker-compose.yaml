@@ -1,0 +1,21 @@
+services:
+  writefreely:
+    image: algernon/writefreely
+    hostname: writefreely
+    ports:
+      - "8080:8080"
+    volumes:
+      - wf_data:/data
+    env_file: .env
+    restart: unless-stopped
+  caddy:
+    image: caddy
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_ssl_data:/data
+volumes:
+  wf_data:
+  caddy_ssl_data:
